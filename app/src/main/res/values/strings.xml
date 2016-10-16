@@ -7,6 +7,8 @@
     <string name="font_oem3">fonts/oem3.ttf</string>
     <string name="spec_prop_id">Application</string>
     <string name="spec_prop_serial">Serial:\u0020</string>
+    <string name="spec_prop_name">Name:\u0020</string>
+    <string name="spec_prop_number">Number:\u0020</string>
     <string name="spec_prop_param">Parameter:\u0020</string>
     <string name="spec_prop_version">Version:\u0020</string>
     <string name="spec_prop_date">Validity:\u0020</string>
@@ -38,6 +40,7 @@
     <string name="spec_app_tunion_ep">T-Union (Base)</string>
     <string name="spec_app_tunion_ec">T-Union (Expanded)</string>
     <string name="spec_app_cityunion">City Union ( %1$s )</string>
+    <string name="spec_app_tsinghua">Tsinghua Campus</string>
     <string name="spec_zip_unknown">Unknown city</string>
     <string name="info_nfc_notsupport">
 <![CDATA[

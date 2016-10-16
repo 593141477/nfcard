@@ -30,7 +30,7 @@ import android.nfc.tech.IsoDep;
 @SuppressWarnings("unchecked")
 public abstract class StandardPboc {
 	private static Class<?>[][] readers = {
-			{ BeijingMunicipal.class, WuhanTong.class, CityUnion.class, TUnion.class,
+			{ BeijingMunicipal.class, WuhanTong.class, TsinghuaCampus.class, CityUnion.class, TUnion.class,
 					ShenzhenTong.class, }, { StandardECash.class, } };
 
 	public static void readCard(IsoDep tech, Card card) throws InstantiationException,
@@ -91,6 +91,7 @@ public abstract class StandardPboc {
 	protected static int MAX_LOG = 10;
 	protected static int SFI_LOG = 24;
 
+	protected final static byte TRANS_ED = 5;
 	protected final static byte TRANS_CSU = 6;
 	protected final static byte TRANS_CSU_CPX = 9;
 
@@ -235,7 +236,7 @@ public abstract class StandardPboc {
 			for (final byte[] v : log) {
 				final int money = Util.toInt(v, 5, 4);
 				if (money > 0) {
-					final char s = (v[9] == TRANS_CSU || v[9] == TRANS_CSU_CPX) ? '-' : '+';
+					final char s = (v[9] == TRANS_CSU || v[9] == TRANS_CSU_CPX || v[9] == TRANS_ED) ? '-' : '+';
 
 					final int over = Util.toInt(v, 2, 3);
 					final String slog;

@@ -26,6 +26,8 @@ public final class SPEC {
 
 	public enum PROP {
 		ID(R.string.spec_prop_id),
+		NAME(R.string.spec_prop_name),
+		NUMBER(R.string.spec_prop_number),
 		SERIAL(R.string.spec_prop_serial),
 		PARAM(R.string.spec_prop_param),
 		VERSION(R.string.spec_prop_version),
@@ -67,7 +69,8 @@ public final class SPEC {
 		QCREDIT(R.string.spec_app_qcredit),
 		TUNIONEC(R.string.spec_app_tunion_ec),
 		TUNIONEP(R.string.spec_app_tunion_ep),
-		CITYUNION(R.string.spec_app_cityunion);
+		CITYUNION(R.string.spec_app_cityunion),
+		TSINGHUA(R.string.spec_app_tsinghua);
 
 		public String toString() {
 			return ThisApplication.getStringResource(resId);

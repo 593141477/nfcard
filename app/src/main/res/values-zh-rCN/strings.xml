@@ -7,9 +7,11 @@
     <string name="font_oem3">fonts/oem3.ttf</string>
     <string name="spec_prop_id">应用</string>
     <string name="spec_prop_serial">卡号：\u0020</string>
+    <string name="spec_prop_name">姓名：\u0020</string>
+    <string name="spec_prop_number">工号：\u0020</string>
     <string name="spec_prop_param">参数：\u0020</string>
     <string name="spec_prop_version">版本：\u0020</string>
-    <string name="spec_prop_date">生效：\u0020</string>
+    <string name="spec_prop_date">有效期：\u0020</string>
     <string name="spec_prop_currency">币种：\u0020</string>
     <string name="spec_prop_count">交易：\u0020</string>
     <string name="spec_prop_balance">余额：\u0020</string>
@@ -38,6 +40,7 @@
     <string name="spec_app_tunion_ep">交通联合卡（基础账户）</string>
     <string name="spec_app_tunion_ec">交通联合卡（扩展账户）</string>
     <string name="spec_app_cityunion">城市一卡通（%1$s）</string>
+    <string name="spec_app_tsinghua">清华校园卡</string>
     <string name="spec_zip_unknown">未知城市</string>
     <string name="info_nfc_notsupport">
 <![CDATA[

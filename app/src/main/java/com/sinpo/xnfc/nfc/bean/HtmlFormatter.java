@@ -122,6 +122,18 @@ public final class HtmlFormatter {
 		}
 
 		{
+			SPEC.PROP prop = SPEC.PROP.NAME;
+			if (formatProperty(out, SPEC.TAG_LAB, prop, app.getStringProperty(prop)))
+				newline(out);
+		}
+
+		{
+			SPEC.PROP prop = SPEC.PROP.NUMBER;
+			if (formatProperty(out, SPEC.TAG_LAB, prop, app.getStringProperty(prop)))
+				newline(out);
+		}
+
+		{
 			SPEC.PROP prop = SPEC.PROP.COUNT;
 			if (formatProperty(out, SPEC.TAG_LAB, prop, app.getStringProperty(prop)))
 				newline(out);
