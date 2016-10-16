@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        applicationId "com.sinpo.xnfc"
+        minSdkVersion 10
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard.cfg'
+        }
+    }
+}
