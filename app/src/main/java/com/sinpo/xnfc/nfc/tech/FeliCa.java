@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import android.nfc.tech.NfcF;
+import android.util.Log;
 
 import com.sinpo.xnfc.nfc.Util;
 
@@ -630,7 +631,10 @@ public class FeliCa {
 		}
 
 		public byte[] transceive(byte... cmd) throws IOException {
-			return nfcTag.transceive(cmd);
+			Log.i("Felica.transceive", "cmd "+Util.toHexString(cmd, 0, cmd.length));
+			byte[] r = nfcTag.transceive(cmd);
+			Log.i("Felica.transceive", "rsp "+Util.toHexString(r, 0, r.length));
+			return r;
 		}
 	}
 
